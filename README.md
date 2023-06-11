@@ -53,15 +53,15 @@ nothing to commit, working tree clean
 
 ### Creating a Branch
 
-When working on a project, it is common to create a new branch before you start working on new things, often called "features". This allows you to work on multiple features at the same time, without having to worry about changes to one feature affecting another feature. For this exercise you will create a branch named `adding-<username>`, where you replace `<username>` with your GitHub username. To create a new branch, run the following command in the terminal:
+When working on a project, it is common to create a new branch before you start working on new things, often called "features". This allows you to work on multiple features at the same time, without having to worry about changes to one feature affecting another feature. For this exercise you will create a branch named `adding-<username>`, where you replace `<username>` with your GitHub username. To create a new branch for the user `brendonthiede`, run the following command in the terminal:
 
 ```bash
-git checkout -b adding-<username>
+git checkout -b adding-brendonthiede
 ```
 
 Now when you run `git status`, you should see something like the following:
 
 ```text
-On branch adding-<username>
+On branch adding-brendonthiede
 nothing to commit, working tree clean
 ```
