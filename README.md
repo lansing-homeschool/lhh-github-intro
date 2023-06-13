@@ -65,3 +65,53 @@ Now when you run `git status`, you should see something like the following:
 On branch adding-brendonthiede
 nothing to commit, working tree clean
 ```
+
+### Making Changes
+
+Now that you are working on your own branch, you can make changes to the files in the repository. For this exercise, you will add your name to the list of champions in the `champions.md` file. Open the `champions.md` file in your text editor, and add your name or username to the list, prefixed with an asterisk (`*`). For example, if your username is `brendonthiede`, you would add the following line to the file:
+
+```text
+* brendonthiede
+```
+
+Once you have added your name, save the file. Now when you run `git status`, you should see something like the following:
+
+```text
+On branch adding-brendonthiede
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   champions.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+### Committing Changes
+
+Once you have made changes to the files in the repository, you can commit those changes to your local copy of the repository. This allows you to keep track of the changes you make to the repository over time. To commit your changes, run the following command in the terminal:
+
+```bash
+git add champions.md
+git commit -m "Adding brendonthiede to champions list"
+```
+
+The first command stages the changes you made to the `champions.md` file, and the second command commits those changes to your local copy of the repository with the message provided. You can now run `git status` again, and you should see something like the following:
+
+```text
+On branch adding-brendonthiede
+nothing to commit, working tree clean
+```
+
+### Pushing Changes
+
+Once you have committed your changes to your local copy of the repository, you can push those changes to the remote copy of the repository on GitHub. To push your changes, run the following command in the terminal:
+
+```bash
+git push origin adding-brendonthiede
+```
+
+"origin" is the name for the GitHub "remote" that was added automatically when we first cloned the repo from there. "adding-brendonthiede" is the name of the branch that we are pushing to the remote. You should now see your changes on GitHub, in your forked copy of the repository.
+
+### Creating a Pull Request
+
+Now that you have pushed your changes to your forked copy of the repository, you can create a pull request to merge your changes into the original repository. To create a pull request, go to your forked copy of the repository on GitHub, and click the "Pull requests" tab. Then click the "New pull request" button. This will open a page where you can review the changes you are requesting to merge into the original repository. If everything looks good, click the Create pull request button. This will open a page where you can add a title and description for your pull request. Once you have added a title and description, click the "Create pull request" button. This will create a pull request, and open a page where you can see the status of your pull request. Once your pull request has been reviewed and merged, you will see your changes in the original repository.
